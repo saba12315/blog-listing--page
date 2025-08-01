@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Blog | Latest Articles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Internship Blog</h1>
+            <p class="subtitle">Insights, tips & stories from our internship community</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="web-dev">Web Dev</button>
+                <button class="filter-btn" data-category="intern-tips">Intern Tips</button>
+                <button class="filter-btn" data-category="career">Career Growth</button>
+            </div>
+
+            <div class="blog-grid">
+                <!-- Blog cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <div class="modal" id="blogModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img class="modal-image" src="" alt="">
+            <h2 class="modal-title"></h2>
+            <div class="modal-meta">
+                <span class="modal-author"></span>
+                <span class="modal-date"></span>
+                <span class="modal-category"></span>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
